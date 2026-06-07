@@ -7,6 +7,8 @@ idf_component_register(
 	"components/manipulator/servo/manipulator_servo.cpp"
 	"components/manipulator/kinematics/kinematics.cpp"
 	"components/manipulator/trajectory/trajectory.cpp"
+	"components/comms/ble/ble_comm.cpp"
+	"components/comms/parser/command_parser.cpp"
 	INCLUDE_DIRS
 	"."
 	"components/platform/mecanum"
@@ -15,6 +17,10 @@ idf_component_register(
 	"components/manipulator/servo"
 	"components/manipulator/kinematics"
 	"components/manipulator/trajectory"
+	"components/comms/ble"
+	"components/comms/parser"
 	REQUIRES
 	iarduino_motor
+	bt
+	nvs_flash
 )

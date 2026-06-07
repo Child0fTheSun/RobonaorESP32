@@ -14,6 +14,6 @@
     "--query-driver=**",
     "--compile-commands-dir=d:\\Studies\\Diplom\\RobonatorESP32\\sample_project\\build"
   ],
-  "idf.portWin": "COM7",
+  "idf.portWin": "COM6",
   "idf.flashType": "UART"
 }
