@@ -1,0 +1,20 @@
+idf_component_register(
+	SRCS
+	"main.cpp"
+	"components/platform/mecanum/mecanum.cpp"
+	"components/platform/speed_profile/speed_profile.cpp"
+	"components/platform/bus/i2c_bus.cpp"
+	"components/manipulator/servo/manipulator_servo.cpp"
+	"components/manipulator/kinematics/kinematics.cpp"
+	"components/manipulator/trajectory/trajectory.cpp"
+	INCLUDE_DIRS
+	"."
+	"components/platform/mecanum"
+	"components/platform/speed_profile"
+	"components/platform/bus"
+	"components/manipulator/servo"
+	"components/manipulator/kinematics"
+	"components/manipulator/trajectory"
+	REQUIRES
+	iarduino_motor
+)

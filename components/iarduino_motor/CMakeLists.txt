@@ -1,0 +1,10 @@
+idf_component_register(
+	SRCS
+	"iarduino_I2C_Motor.cpp"
+	INCLUDE_DIRS
+	"."
+	REQUIRES
+	esp_driver_i2c
+	esp_timer
+	esp_rom
+)
